@@ -21,7 +21,7 @@ for employee in employee_list:
     elif employee[1] == "一般社員":
 		# 処理記述
     elif employee[1] == "アルバイト":
-		# 処理記述
+		# 処理記述　（ここ）
 		
 		
     payment = int(payment)
