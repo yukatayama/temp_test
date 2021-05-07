@@ -21,7 +21,8 @@ for employee in employee_list:
     elif employee[1] == "一般社員":
 		# 処理記述
     elif employee[1] == "アルバイト":
-		# 処理記述　（ここ）
+        IT  = cal_IT( employee[5] * employee[6] ) # 所得税
+        payment = employee[5] * employee[6] - IT  # 時間給 - 所得税
 		
 		
     payment = int(payment)
