@@ -17,7 +17,10 @@ for employee in employee_list:
     SIP = 0
     IT  = 0
     if employee[1] == "管理職":
-		# 処理記述 （ここ）
+        sum234 = employee[2] + employee[3]  # 基本給 + 職能給
+        SIP = cal_SIP(sum234)  # 社会保険料
+        IT  = cal_IT(sum234 - SIP) # 所得税
+        payment = sum234 - SIP - IT
     elif employee[1] == "一般社員":
 		# 処理記述
     elif employee[1] == "アルバイト":
