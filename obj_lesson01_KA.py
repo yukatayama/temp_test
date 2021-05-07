@@ -27,3 +27,10 @@ for employee in employee_list:
         payment = employee[5] * employee[6] - IT  # 時間給 - 所得税
     payment = int(payment)
     print(employee[0] + ": " + str(payment) + " 円")
+
+
+##
+##
+## 追加
+##
+##
