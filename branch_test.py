@@ -22,7 +22,11 @@ for employee in employee_list:
         IT  = cal_IT(sum234 - SIP) # 所得税
         payment = sum234 - SIP - IT
     elif employee[1] == "一般社員":
-		# 処理記述
+        OF  = cal_OF(employee[2], employee[4]) # 残業代 = 残業時間*残業時間単位
+        sum234 = employee[2] + employee[3] + OF  # 基本給 + 職能給 + 残業代
+        SIP = cal_SIP(sum234)  # 社会保険料
+        IT  = cal_IT(sum234 - SIP) # 所得税
+        payment = sum234 - SIP - IT
     elif employee[1] == "アルバイト":
 		# 処理記述
 		
