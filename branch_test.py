@@ -28,7 +28,8 @@ for employee in employee_list:
         IT  = cal_IT(sum234 - SIP) # 所得税
         payment = sum234 - SIP - IT
     elif employee[1] == "アルバイト":
-		# 処理記述
+        IT  = cal_IT( employee[5] * employee[6] ) # 所得税
+        payment = employee[5] * employee[6] - IT  # 時間給 - 所得税
 		
 		
     payment = int(payment)
