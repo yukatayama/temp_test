@@ -21,7 +21,7 @@ for employee in employee_list:
         SIP = cal_SIP(sum234)  # 社会保険料
         IT  = cal_IT(sum234 - SIP) # 所得税
         payment = sum234 - SIP - IT
-
+	# 一般職の処理を入れてください.
     elif employee[1] == "アルバイト":
         IT  = cal_IT( employee[5] * employee[6] ) # 所得税
         payment = employee[5] * employee[6] - IT  # 時間給 - 所得税
